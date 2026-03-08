@@ -11,44 +11,46 @@
 
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Preskoči na glavni sadržaj</a>
 
   <header>
+    <nav aria-label="Glavna navigacija">
+      <a href="#o-meni">O meni</a>
+      <a href="#projekti">Projekti</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
     <h1>Jovica Lešević</h1>
     <p>Frontend Developer u nastajanju</p>
   </header>
 
-  <main>
-
-    <section>
-      <h2>O meni</h2>
+  <main id="main-content">
+    <section id="o-meni" aria-labelledby="o-meni-heading">
+      <h2 id="o-meni-heading">O meni</h2>
       <p>
-        Trenutno učim frontend razvoj i radim na ličnim projektima. 
+        Trenutno učim frontend razvoj i radim na ličnim projektima.
         Volim da pretvaram ideje u funkcionalne i lepe interfejse.
         Fokusiram se na HTML, CSS, JavaScript i React.
       </p>
 
+      <!-- Ovo će biti sakriveno na početku -->
+      <p id="vise-tekst" class="sakriven" aria-hidden="true">
+        Zanimaju me performanse, pristupačnost i čist kod.
+        Trenutno najviše radim sa vanilla JavaScript-om,
+        ali planiram uskoro da se ozbiljnije bacim na React i TypeScript.
+      </p>
 
-  <!-- Ovo će biti sakriveno na početku -->
-  <p id="vise-tekst" class="sakriven">
-    Zanimaju me performanse, pristupačnost i čist kod. 
-    Trenutno najviše radim sa vanilla JavaScript-om, 
-    ali planiram uskoro da se ozbiljnije bacim na React i TypeScript.
-  </p>
+      <button id="vise-dugme" aria-expanded="false" aria-controls="vise-tekst">Više o meni</button>
+    </section>
 
-  <button id="vise-dugme">Više o meni</button>
-    
-</section>
-
-    <section>
-      <h2>Projekti</h2>
+    <section id="projekti" aria-labelledby="projekti-heading">
+      <h2 id="projekti-heading">Projekti</h2>
       <!-- ovde će kasnije doći projekti -->
     </section>
 
-    <section>
-      <h2>Kontakt</h2>
+    <section id="kontakt" aria-labelledby="kontakt-heading">
+      <h2 id="kontakt-heading">Kontakt</h2>
       <p>
-        Email: <a href="mailto:ime@tvoj-domen.rs">jovica.lesevic@gmail.rs</a><br>
-        Ili me pronađi na X: @Unrest1969
+        Email: <a href="jovica.lesevic@gmail.rs">jovica.lesevic@gmail.rs</a><br>
       </p>
     </section>
 
